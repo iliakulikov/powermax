@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Powermax Landing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="hero__inner container">
+      <p class="hero__eyebrow">Powermax Vitamin Shop · Ireland</p>
+      <h1 class="hero__title">Pure Protein <span>Selected by Peter</span></h1>
+      <p class="hero__subtitle">Premium BioTech protein, hand-picked by Peter - founder and athlete. Authentic stock, shipped from Ireland.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#sale">Shop Now</a>
+        <a class="btn btn--ghost" href="#founder">Peter's Story</a>
+      </div>
+      <div class="hero__products" aria-hidden="true">
+        <img src="img/iso-banana.jpg" alt="">
+        <img src="img/iso-caramel.png" alt="">
+        <img src="img/hydro-whey-zero.png" alt="" class="hero__main-product">
+        <img src="img/iso-caramel.png" alt="">
+        <img src="img/iso-banana.jpg" alt="">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--light" id="founder">
+      <div class="container">
+        <p class="section__eyebrow section__eyebrow--center">The Founder</p>
+        <h2 class="section__title section__title--center">The story of my journey.</h2>
+
+        <article class="story-card">
+          <div class="story-card__image-wrap">
+            <img src="img/founder.jpg" alt="Peter, founder of Powermax Vitamin Shop" class="story-card__image">
+          </div>
+          <div class="story-card__content">
+            <p class="story-card__lead">Five years ago, I was in a car accident with no noticeable injuries. One morning in 2018 I woke up and couldn't move my hands.</p>
+            <p>A scan revealed serious damage to two cervical vertebrae. The choice: physiotherapy or surgery. That was the moment my recovery began.</p>
+            <p>In May 2018 I started clean eating and disciplined training. Months later, my condition was transformed.</p>
+            <p>In October 2018 I placed 2nd in my first Men's Physique competition, and 3rd the following year.</p>
+            <p>That experience taught me the value of nutrition. I founded Hi Pro Food and Powermax Vitamin Shop to bring the best to Ireland.</p>
+            <p class="story-card__lead-sm">This is my journey. I hope you'll join me.</p>
+
+            <ul class="story-card__stats" aria-label="Achievements">
+              <li><strong>2018</strong><span>Recovery began</span></li>
+              <li><strong>2nd</strong><span>Men's Physique '18</span></li>
+              <li><strong>3rd</strong><span>Men's Physique '19</span></li>
+            </ul>
+
+            <img src="img/family.jpg" alt="Peter with his family at Powermax Vitamin Shop" class="story-card__family">
+            <img src="img/founder-signature.png" alt="Peter signature" class="story-card__signature">
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--biotech" id="biotech">
+      <div class="container section__center">
+        <p class="section__eyebrow">Watch</p>
+        <h2 class="section__title section__title--biotech">Why BioTech.</h2>
+        <p class="section__subcopy section__subcopy--biotech">Peter on the philosophy behind the brand and the products he stands behind.</p>
+      </div>
+    </section>
+
+    <section class="section" id="featured">
+      <div class="container">
+        <div class="featured-card">
+          <div class="featured-card__content">
+            <p class="section__eyebrow section__eyebrow--left">Featured</p>
+            <h3>Hydro Whey Zero</h3>
+            <p>Hydrolysate and isolate fusion. Faster absorption, zero compromise.</p>
+            <div class="price-row">
+              <strong>€89.99</strong>
+              <span>€95.00</span>
+            </div>
+            <a class="btn btn--dark" href="#sale">Buy now</a>
+          </div>
+          <div class="featured-video" id="videoFeature" role="button" tabindex="0" aria-label="Toggle Why BioTech video playback">
+            <video id="whyVideo" class="featured-video__media" poster="img/video-poster.jpg" preload="metadata" playsinline>
+              <source src="img/peter480_final.mp4" type="video/mp4">
+              <source src="img/peter480_final.mov" type="video/quicktime">
+              Your browser does not support the video tag.
+            </video>
+            <button class="featured-video__play" id="videoPlayButton" type="button" aria-label="Play or pause Why BioTech video">▶</button>
+            <button class="featured-video__mute" id="muteButton" type="button" aria-pressed="false" aria-label="Mute video">Sound: On</button>
+          </div>
+          <img src="img/featured-product.png" alt="Hydro Whey Zero product" class="featured-card__product">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="sale">
+      <div class="container section__center">
+        <p class="section__eyebrow">Limited offers</p>
+        <h2 class="section__title">BioTech, on sale.</h2>
+        <p class="section__subcopy">Hand-picked. Authentic. Shipped from Ireland.</p>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-card__visual"><img src="img/featured-product.png" alt="Hydro Whey Zero 1816g Strawberry"></div>
+            <p class="product-card__brand">BioTech</p>
+            <h3>Hydro Whey Zero</h3>
+            <p>1816g · Strawberry</p>
+            <div class="price-row"><strong>€89.99</strong><span>€95.00</span></div>
+            <a class="btn btn--dark" href="#">Buy now</a>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__visual"><img src="img/iso-caramel.png" alt="Iso Whey Zero 1816g Catalan Caramel"></div>
+            <p class="product-card__brand">BioTech</p>
+            <h3>Iso Whey Zero</h3>
+            <p>1816g · Catalan Caramel</p>
+            <div class="price-row"><strong>€69.99</strong><span>€78.99</span></div>
+            <a class="btn btn--dark" href="#">Buy now</a>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__visual"><img src="img/iso-caramel.png" alt="Iso Whey Zero 1816g Lemon Cheesecake"></div>
+            <p class="product-card__brand">BioTech</p>
+            <h3>Iso Whey Zero</h3>
+            <p>1816g · Lemon Cheesecake</p>
+            <div class="price-row"><strong>€69.99</strong><span>€78.99</span></div>
+            <a class="btn btn--dark" href="#">Buy now</a>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__visual"><img src="img/iso-banana.jpg" alt="Iso Whey Zero 454g Banana"></div>
+            <p class="product-card__brand">BioTech</p>
+            <h3>Iso Whey Zero</h3>
+            <p>454g · Banana</p>
+            <div class="price-row"><strong>€21.00</strong><span>€26.00</span></div>
+            <a class="btn btn--dark" href="#">Buy now</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 Powermax Vitamin Shop · Ireland</p>
+      <img src="img/powermax-logo.png" alt="Powermax logo" class="footer__logo">
+      <p>Contact · Privacy Policy · Shipping & returns</p>
+    </div>
+    <div class="footer__socials" aria-label="Social media">
+      <img src="img/instagram-icon.png" alt="Instagram">
+      <img src="img/facebook-icon.png" alt="Facebook">
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
