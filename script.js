@@ -2,6 +2,15 @@ const videoFeature = document.getElementById("videoFeature");
 const whyVideo = document.getElementById("whyVideo");
 const videoPlayButton = document.getElementById("videoPlayButton");
 const muteButton = document.getElementById("muteButton");
+const storyLink = document.querySelector('a[href="#founder"]');
+const founderSection = document.getElementById("founder");
+
+if (storyLink && founderSection) {
+  storyLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    founderSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+}
 
 if (videoFeature && whyVideo && videoPlayButton && muteButton) {
   whyVideo.muted = false;
