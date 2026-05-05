@@ -62,7 +62,7 @@ img {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  height: 350px;
+  height: 330px;
   width: auto;
   pointer-events: none;
   z-index: 0;
