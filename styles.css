@@ -594,6 +594,24 @@ img {
   min-height: 46px;
 }
 
+.promo-card--shipping {
+  margin-top: 1rem;
+  background:
+    radial-gradient(130% 170% at 10% 0%, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 48%),
+    linear-gradient(112deg, #072f64 0%, #1f5ea8 42%, #f04c24 100%);
+}
+
+.promo-card--shipping .promo-card__code-wrap {
+  background: rgba(8, 17, 32, 0.3);
+}
+
+.promo-card__vehicle {
+  width: min(220px, 100%);
+  margin: 0 auto 0.15rem;
+  filter: drop-shadow(0 10px 16px rgba(0, 0, 0, 0.34));
+  transform: rotate(-2deg);
+}
+
 .product-card {
   background: #fff;
   border-radius: var(--radius-md);
@@ -949,6 +967,10 @@ img {
 
   .promo-card__code {
     font-size: 0.92rem;
+  }
+
+  .promo-card__vehicle {
+    width: min(185px, 100%);
   }
 
   .hero__products {
