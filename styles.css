@@ -39,14 +39,33 @@ img {
 }
 
 .hero {
+  position: relative;
+  overflow: hidden;
   min-height: 920px;
   background: radial-gradient(ellipse at 50% 100%, #d40924 0%, #8f0412 35%, #4b0000 70%, #210000 100%);
   color: #fff;
-  padding: 5.75rem 0 5.75rem;
+  padding: 5.75rem 0 0;
 }
 
 .hero__inner {
+  position: relative;
+  z-index: 1;
   text-align: center;
+}
+
+.hero__peter-spacer {
+  display: block;
+}
+
+.hero__peter-hero {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 350px;
+  width: auto;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .hero__eyebrow {
@@ -833,7 +852,11 @@ img {
   .hero {
     min-height: auto;
     padding-top: 3.75rem;
-    padding-bottom: 3.75rem;
+    padding-bottom: 0;
+  }
+
+  .hero__peter-hero {
+    height: 180px;
   }
 
   .hero__subtitle {
@@ -934,7 +957,7 @@ img {
     justify-items: center;
     gap: 0.4rem;
     width: min(430px, 100%);
-    margin: 2.1rem auto 0;
+    margin: 2.1rem auto;
   }
 
   .hero__products img {
@@ -969,7 +992,11 @@ img {
 @media (max-width: 480px) {
   .hero {
     padding-top: 3.35rem;
-    padding-bottom: 3.35rem;
+    padding-bottom: 0;
+  }
+
+  .hero__peter-hero {
+    height: 150px;
   }
 
   .hero__eyebrow {
