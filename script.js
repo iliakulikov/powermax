@@ -4,11 +4,20 @@ const videoPlayButton = document.getElementById("videoPlayButton");
 const muteButton = document.getElementById("muteButton");
 const storyLink = document.querySelector('a[href="#founder"]');
 const founderSection = document.getElementById("founder");
+const saleLink = document.querySelector('a[href="#sale"]');
+const saleSection = document.getElementById("sale");
 
 if (storyLink && founderSection) {
   storyLink.addEventListener("click", (event) => {
     event.preventDefault();
     founderSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+}
+
+if (saleLink && saleSection) {
+  saleLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    saleSection.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 }
 
